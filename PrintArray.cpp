@@ -1,5 +1,4 @@
 #include<iostream>
-#include<vector>
 using namespace std;
 
 int main()
@@ -8,20 +7,18 @@ int main()
     cout<<"Enter Your Array Size => ";
     cin>>n;
     cout<<endl;
+    int arr[n];
     cout<<"Enter your Element of array \n";
-    vector<int> vct;
+  
     
     for(int i=0;i<n;i++)
     {
-        int value;
-        cin>>value;
-        vct.push_back(value);
-       
+        cin>>arr[i];
     }
   cout<<"Your Entered Array is => ";
-    for(int i=0;i<vct.size();i++)
+    for(int i=0;i<n;i++)
     {
-        cout<<vct[i]<<" ";
+        cout<<arr[i]<<" ";
     }
     return 0;
 }
