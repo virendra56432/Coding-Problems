@@ -1,12 +1,27 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int main()
 {
-    int arr[]={1,2,3,4,5};
-    for(int i=0;i<5;i++)
+    int n;
+    cout<<"Enter Your Array Size => ";
+    cin>>n;
+    cout<<endl;
+    cout<<"Enter your Element of array \n";
+    vector<int> vct;
+    
+    for(int i=0;i<n;i++)
     {
-        cout<<arr[i]<<" ";
+        int value;
+        cin>>value;
+        vct.push_back(value);
+       
+    }
+  cout<<"Your Entered Array is => ";
+    for(int i=0;i<vct.size();i++)
+    {
+        cout<<vct[i]<<" ";
     }
     return 0;
 }
