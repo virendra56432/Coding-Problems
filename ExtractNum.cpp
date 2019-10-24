@@ -3,23 +3,12 @@
 #include <sstream> 
 using namespace std; 
 
-void extractInteger(string str) 
-{ 
-	stringstream ss;	 
-	ss << str; 
-	string temp; 
-	int found; 
-	while (!ss.eof()) { 
-		ss >> temp; 
-		if (stringstream(temp) >> found) 
-			cout << found << " "; 
-		temp = ""; 
-	} 
-} 
+ 
 
 int main() 
 { 
-	string str = "Hello34Hii45"; 
-	extractInteger(str); 
+	string str = "1234"; 
+	for(int i=0;i<str.size();i++)
+	cout<<str[i]-'0';
 	return 0; 
 } 
