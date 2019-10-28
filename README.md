@@ -1,3 +1,3 @@
 # Coding-Problems
 
-Problems in C++ language.
+Solution of Coding Problems in C++ language.
